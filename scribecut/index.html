@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>ScribeCut — Find your clips instantly</title>
         <link rel="icon" type="image/webp" href="peaklogo.webp" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
@@ -24,15 +27,8 @@
                         target="_blank"
                         class="nav-github"
                     >
-                        <svg
-                            width="18"
-                            height="18"
-                            viewBox="0 0 24 24"
-                            fill="currentColor"
-                        >
-                            <path
-                                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"
-                            />
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/>
                         </svg>
                         GitHub
                     </a>
@@ -43,21 +39,28 @@
         <!-- Hero -->
         <section class="hero">
             <div class="hero-glow"></div>
+            <div class="hero-glow2"></div>
+
             <div class="hero-inner">
+                <div class="hero-eyebrow">
+                    <span class="hero-eyebrow-line"></span>
+                    Free &middot; No Account Required
+                </div>
                 <h1 class="hero-title">
                     Find your clips<br />
                     <span class="accent">through the words.</span>
                 </h1>
+                <div class="hero-divider"></div>
                 <p class="hero-sub">
-                    <em>Cut down</em> on editing time by finding the moments you
-                    want without manually scrubbing through the timeline. All
-                    done with a few clicks.
+                    <strong>Cut down</strong> on editing time by finding the moments you
+                    want without manually scrubbing through the timeline.
+                    All done with a few clicks.
                 </p>
                 <div class="hero-cta">
                     <a href="#download" class="btn-primary">Download Free</a>
                     <a href="#features" class="btn-ghost">See Features</a>
                 </div>
-                <p class="hero-platforms">Available for Windows · macOS</p>
+                <p class="hero-platforms">Available for Windows &middot; macOS</p>
             </div>
 
             <!-- Hero demo video -->
@@ -74,184 +77,89 @@
         <!-- Features -->
         <section class="features" id="features">
             <div class="section-inner">
-                <h2 class="section-title">
-                    Everything you need to clip faster
-                </h2>
-                <p class="section-sub">
-                    Stop scrubbing timelines. Find what you need.
-                </p>
+                <p class="section-label">What's inside</p>
+                <h2 class="section-title">Everything you need to clip faster</h2>
+                <p class="section-sub">Stop scrubbing timelines. Find what you need.</p>
+
                 <div class="feature-carousel">
                     <div class="carousel-clip">
                         <div class="carousel-track-wrap">
                             <div class="carousel-track">
-                                <div class="feature-card">
+                                <div class="feature-card reveal">
+                                    <span class="feature-num">01</span>
                                     <div class="feature-icon">
-                                        <svg
-                                            width="28"
-                                            height="28"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="1.8"
-                                        >
-                                            <circle cx="11" cy="11" r="8" />
-                                            <path d="m21 21-4.35-4.35" />
+                                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                            <circle cx="11" cy="11" r="8"/>
+                                            <path d="m21 21-4.35-4.35"/>
                                         </svg>
                                     </div>
                                     <h3>Transcript Search</h3>
-                                    <p>
-                                        Type anything and instantly jump to
-                                        every moment it was said in your videos.
-                                    </p>
+                                    <p>Type anything and instantly jump to every moment it was said in your videos.</p>
                                 </div>
 
-                                <div class="feature-card">
+                                <div class="feature-card reveal">
+                                    <span class="feature-num">02</span>
                                     <div class="feature-icon teal">
-                                        <svg
-                                            width="28"
-                                            height="28"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="1.8"
-                                        >
-                                            <path
-                                                d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"
-                                            />
-                                            <polyline points="14 2 14 8 20 8" />
-                                            <line
-                                                x1="12"
-                                                y1="18"
-                                                x2="12"
-                                                y2="12"
-                                            />
-                                            <line
-                                                x1="9"
-                                                y1="15"
-                                                x2="15"
-                                                y2="15"
-                                            />
+                                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                            <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"/>
+                                            <polyline points="14 2 14 8 20 8"/>
+                                            <line x1="12" y1="18" x2="12" y2="12"/>
+                                            <line x1="9" y1="15" x2="15" y2="15"/>
                                         </svg>
                                     </div>
                                     <h3>One-Click Export</h3>
-                                    <p>
-                                        Queue up clips with precise start/end
-                                        timestamps and export them all at once
-                                        as MP4s. No timeline editing required.
-                                    </p>
+                                    <p>Queue up clips with precise start/end timestamps and export them all at once as MP4s. No timeline editing required.</p>
                                 </div>
 
-                                <div class="feature-card">
+                                <div class="feature-card reveal">
+                                    <span class="feature-num">03</span>
                                     <div class="feature-icon orange">
-                                        <svg
-                                            width="28"
-                                            height="28"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="1.8"
-                                        >
-                                            <rect
-                                                x="2"
-                                                y="3"
-                                                width="20"
-                                                height="14"
-                                                rx="2"
-                                            />
-                                            <path d="M8 21h8M12 17v4" />
+                                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                            <path d="M8 21h8M12 17v4"/>
                                         </svg>
                                     </div>
                                     <h3>Native Desktop App</h3>
-                                    <p>
-                                        Works completely offline on your own
-                                        machine. No cloud uploads, no
-                                        subscriptions — footage stays private.
-                                    </p>
+                                    <p>Works completely offline on your own machine. No cloud uploads, no subscriptions — footage stays private.</p>
                                 </div>
 
-                                <div class="feature-card">
+                                <div class="feature-card reveal">
+                                    <span class="feature-num">04</span>
                                     <div class="feature-icon purple">
-                                        <svg
-                                            width="28"
-                                            height="28"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="1.8"
-                                        >
-                                            <path
-                                                d="M12 2L2 7l10 5 10-5-10-5z"
-                                            />
-                                            <path d="m2 17 10 5 10-5" />
-                                            <path d="m2 12 10 5 10-5" />
+                                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                            <path d="m2 17 10 5 10-5"/>
+                                            <path d="m2 12 10 5 10-5"/>
                                         </svg>
                                     </div>
                                     <h3>Multi-Video Library</h3>
-                                    <p>
-                                        Load as many videos as you want. Each
-                                        one gets its own transcription and you
-                                        can search across your whole session.
-                                    </p>
+                                    <p>Load as many videos as you want. Each one gets its own transcription and you can search across your whole session.</p>
                                 </div>
 
-                                <div class="feature-card">
-                                    <div class="feature-icon red">
-                                        <svg
-                                            width="28"
-                                            height="28"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="1.8"
-                                        >
-                                            <path
-                                                d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"
-                                            />
+                                <div class="feature-card reveal">
+                                    <span class="feature-num">05</span>
+                                    <div class="feature-icon blue">
+                                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                            <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>
                                         </svg>
                                     </div>
                                     <h3>Instant Results</h3>
-                                    <p>
-                                        Debounced live search returns results as
-                                        you type. Click a timestamp to jump
-                                        directly to that moment in the video.
-                                    </p>
+                                    <p>Debounced live search returns results as you type. Click a timestamp to jump directly to that moment in the video.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="carousel-controls">
-                        <button
-                            class="carousel-btn"
-                            id="feat-prev"
-                            aria-label="Previous"
-                        >
-                            <svg
-                                width="18"
-                                height="18"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2.2"
-                            >
-                                <polyline points="15 18 9 12 15 6" />
+                        <button class="carousel-btn" id="feat-prev" aria-label="Previous">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                                <polyline points="15 18 9 12 15 6"/>
                             </svg>
                         </button>
                         <div class="carousel-dots" id="feat-dots"></div>
-                        <button
-                            class="carousel-btn"
-                            id="feat-next"
-                            aria-label="Next"
-                        >
-                            <svg
-                                width="18"
-                                height="18"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2.2"
-                            >
-                                <polyline points="9 18 15 12 9 6" />
+                        <button class="carousel-btn" id="feat-next" aria-label="Next">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                                <polyline points="9 18 15 12 9 6"/>
                             </svg>
                         </button>
                     </div>
@@ -266,11 +174,7 @@
                         const nextBtn = document.getElementById("feat-next");
 
                         function visibleCount() {
-                            return window.innerWidth >= 900
-                                ? 3
-                                : window.innerWidth >= 600
-                                  ? 2
-                                  : 1;
+                            return window.innerWidth >= 900 ? 3 : window.innerWidth >= 600 ? 2 : 1;
                         }
 
                         let current = 0;
@@ -283,13 +187,8 @@
                             dotsWrap.innerHTML = "";
                             for (let i = 0; i < totalPages(); i++) {
                                 const d = document.createElement("button");
-                                d.className =
-                                    "carousel-dot" +
-                                    (i === current ? " active" : "");
-                                d.setAttribute(
-                                    "aria-label",
-                                    "Go to page " + (i + 1),
-                                );
+                                d.className = "carousel-dot" + (i === current ? " active" : "");
+                                d.setAttribute("aria-label", "Go to page " + (i + 1));
                                 d.addEventListener("click", () => goTo(i));
                                 dotsWrap.appendChild(d);
                             }
@@ -298,20 +197,11 @@
                         function goTo(index) {
                             const vc = visibleCount();
                             const wrapWidth = track.parentElement.clientWidth;
-                            const cardWidth = (wrapWidth - 20 * (vc - 1)) / vc;
-                            current = Math.max(
-                                0,
-                                Math.min(index, totalPages() - 1),
-                            );
-                            track.style.transform =
-                                "translateX(-" +
-                                current * (wrapWidth + 20) +
-                                "px)";
-                            dotsWrap
-                                .querySelectorAll(".carousel-dot")
-                                .forEach((d, i) => {
-                                    d.classList.toggle("active", i === current);
-                                });
+                            current = Math.max(0, Math.min(index, totalPages() - 1));
+                            track.style.transform = "translateX(-" + current * (wrapWidth + 20) + "px)";
+                            dotsWrap.querySelectorAll(".carousel-dot").forEach((d, i) => {
+                                d.classList.toggle("active", i === current);
+                            });
                             prevBtn.disabled = current === 0;
                             nextBtn.disabled = current === totalPages() - 1;
                         }
@@ -320,20 +210,13 @@
                             const vc = visibleCount();
                             const wrapWidth = track.parentElement.clientWidth;
                             const cardWidth = (wrapWidth - 20 * (vc - 1)) / vc;
-                            cards.forEach((c) => {
-                                c.style.flex = "0 0 " + cardWidth + "px";
-                            });
+                            cards.forEach((c) => { c.style.flex = "0 0 " + cardWidth + "px"; });
                             buildDots();
                             goTo(Math.min(current, totalPages() - 1));
                         }
 
-                        prevBtn.addEventListener("click", () =>
-                            goTo(current - 1),
-                        );
-                        nextBtn.addEventListener("click", () =>
-                            goTo(current + 1),
-                        );
-
+                        prevBtn.addEventListener("click", () => goTo(current - 1));
+                        nextBtn.addEventListener("click", () => goTo(current + 1));
                         setup();
                         window.addEventListener("resize", setup);
                     })();
@@ -344,33 +227,55 @@
         <!-- How it works -->
         <section class="how-it-works">
             <div class="section-inner">
+                <p class="section-label">Workflow</p>
                 <h2 class="section-title">How it works</h2>
                 <div class="steps">
-                    <div class="step">
-                        <div class="step-num">1</div>
+                    <div class="step reveal">
+                        <span class="step-num">1</span>
+                        <div class="step-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="17 8 12 3 7 8"/>
+                                <line x1="12" y1="3" x2="12" y2="15"/>
+                            </svg>
+                        </div>
                         <h3>Load your videos</h3>
-                        <p>
-                            Drag and drop or browse to add any MP4, MOV, AVI,
-                            MKV, or WebM file.
-                        </p>
+                        <p>Drag and drop or browse to add any MP4, MOV, AVI, MKV, or WebM file.</p>
                     </div>
-                    <div class="step-arrow">→</div>
-                    <div class="step">
-                        <div class="step-num">2</div>
+                    <div class="step-connector">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                    </div>
+                    <div class="step reveal">
+                        <span class="step-num">2</span>
+                        <div class="step-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/>
+                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                                <line x1="12" y1="19" x2="12" y2="22"/>
+                            </svg>
+                        </div>
                         <h3>Transcribe</h3>
-                        <p>
-                            Hit Transcribe and auto-generate a full word-level
-                            transcript locally.
-                        </p>
+                        <p>Hit Transcribe and auto-generate a full word-level transcript locally.</p>
                     </div>
-                    <div class="step-arrow">→</div>
-                    <div class="step">
-                        <div class="step-num">3</div>
-                        <h3>Search & clip</h3>
-                        <p>
-                            Type to search, jump to matches, add moments to the
-                            export queue, and export.
-                        </p>
+                    <div class="step-connector">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                    </div>
+                    <div class="step reveal">
+                        <span class="step-num">3</span>
+                        <div class="step-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/>
+                                <line x1="20" y1="4" x2="8.12" y2="15.88"/>
+                                <line x1="14.47" y1="14.48" x2="20" y2="20"/>
+                                <line x1="8.12" y1="8.12" x2="12" y2="12"/>
+                            </svg>
+                        </div>
+                        <h3>Search &amp; clip</h3>
+                        <p>Type to search, jump to matches, add moments to the export queue, and export.</p>
                     </div>
                 </div>
             </div>
@@ -379,61 +284,67 @@
         <!-- Download -->
         <section class="download" id="download">
             <div class="section-inner">
+                <p class="section-label">Get started</p>
                 <h2 class="section-title">Download ScribeCut</h2>
-                <p class="section-sub">
-                    Completely free. No account required. All local.
-                </p>
+                <p class="section-sub">Completely free. No account required. All local.</p>
+
                 <div class="download-cards">
-                    <div class="download-card featured">
+                    <div class="download-card featured reveal">
                         <div class="download-platform-icon">
-                            <svg
-                                width="40"
-                                height="40"
-                                viewBox="0 0 24 24"
-                                fill="currentColor"
-                            >
-                                <path
-                                    d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"
-                                />
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/>
                             </svg>
                         </div>
                         <h3>Windows</h3>
-                        <p class="download-version">Installer · x64</p>
-                        <a
-                            href="https://github.com/joshsantiago04/scribecut/releases/download/v1.0.1/ScribeCut_1.0.1_x64-setup.exe"
-                            class="download-btn"
-                        >
+                        <p class="download-version">Installer &middot; x64</p>
+                        <a href="https://github.com/joshsantiago04/scribecut/releases/download/v1.0.1/ScribeCut_1.0.1_x64-setup.exe" class="download-btn">
                             Download .exe
                         </a>
                         <p class="download-note">Windows 10 / 11</p>
                     </div>
 
-                    <div class="download-card">
+                    <div class="download-card reveal">
                         <div class="download-platform-icon">
-                            <svg
-                                width="40"
-                                height="40"
-                                viewBox="0 0 24 24"
-                                fill="currentColor"
-                            >
-                                <path
-                                    d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"
-                                />
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/>
                             </svg>
                         </div>
                         <h3>macOS</h3>
-                        <p class="download-version">
-                            Disk Image · Apple Silicon
-                        </p>
-                        <a
-                            href="https://github.com/joshsantiago04/scribecut/releases/download/v1.0.1/ScribeCut_1.0.1_aarch64.dmg"
-                            class="download-btn"
-                        >
+                        <p class="download-version">Disk Image &middot; Apple Silicon</p>
+                        <a href="https://github.com/joshsantiago04/scribecut/releases/download/v1.0.1/ScribeCut_1.0.1_aarch64.dmg" class="download-btn">
                             Download .dmg
                         </a>
                         <p class="download-note">macOS 12 Monterey+</p>
                     </div>
+                </div>
 
+                <div class="download-alt">
+                    <p>View all releases and changelogs on
+                        <a href="https://github.com/joshsantiago04/scribecut/releases" target="_blank">GitHub Releases</a>
+                        &nbsp;&middot;&nbsp;
+                        <a href="https://github.com/joshsantiago04/scribecut/issues" target="_blank">Report an issue</a>
+                    </p>
+                </div>
+
+                <div class="requirements reveal">
+                    <h3>System Requirements</h3>
+                    <div class="req-grid">
+                        <div class="req-item">
+                            <span class="req-label">Windows</span>
+                            <span class="req-value">Windows 10 / 11 · x64</span>
+                        </div>
+                        <div class="req-item">
+                            <span class="req-label">macOS</span>
+                            <span class="req-value">macOS 12 Monterey+ · Apple Silicon</span>
+                        </div>
+                        <div class="req-item">
+                            <span class="req-label">Storage</span>
+                            <span class="req-value">~150 MB install size</span>
+                        </div>
+                        <div class="req-item">
+                            <span class="req-label">Internet</span>
+                            <span class="req-value">Not required — fully offline</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -443,34 +354,29 @@
         <footer class="footer">
             <div class="footer-inner">
                 <div class="footer-brand">
-                    <img
-                        src="peaklogo.webp"
-                        alt="ScribeCut"
-                        class="footer-logo"
-                    />
+                    <img src="peaklogo.webp" alt="ScribeCut" class="footer-logo" />
                     <span>ScribeCut</span>
                 </div>
                 <div class="footer-links">
-                    <a
-                        href="https://github.com/joshsantiago04/scribecut"
-                        target="_blank"
-                        >GitHub</a
-                    >
-                    <a
-                        href="https://github.com/joshsantiago04/scribecut/releases"
-                        target="_blank"
-                        >Releases</a
-                    >
-                    <a
-                        href="https://github.com/joshsantiago04/scribecut/issues"
-                        target="_blank"
-                        >Issues</a
-                    >
+                    <a href="https://github.com/joshsantiago04/scribecut" target="_blank">GitHub</a>
+                    <a href="https://github.com/joshsantiago04/scribecut/releases" target="_blank">Releases</a>
+                    <a href="https://github.com/joshsantiago04/scribecut/issues" target="_blank">Issues</a>
                 </div>
-                <p class="footer-copy">
-                    © 2026 ScribeCut. All rights reserved.
-                </p>
+                <p class="footer-copy">&copy; 2026 ScribeCut. All rights reserved.</p>
             </div>
         </footer>
+
+        <script>
+            // Scroll reveal
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('revealed');
+                        observer.unobserve(e.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        </script>
     </body>
 </html>

@@ -5,6 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>HajoLabs — Lightweight Desktop Tools</title>
         <link rel="icon" type="image/webp" href="scribecut/peaklogo.webp" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
@@ -24,15 +30,21 @@
         <!-- Hero -->
         <section class="hero">
             <div class="hero-glow"></div>
+            <div class="hero-glow2"></div>
             <div class="hero-center">
+                <div class="hero-eyebrow">
+                    <span class="hero-eyebrow-line"></span>
+                    Lightweight &middot; Free &middot; No Account Required
+                </div>
                 <h1 class="hero-title">
-                    Welcome to <br />
-                    <span class="accent">HajoLabs</span>
+                    Tools built to<br />
+                    <span class="accent">to give you back time</span>
                 </h1>
+                <div class="hero-divider"></div>
                 <p class="hero-sub">
-                    Making software and applications that can
-                    <b>hopefully</b> make things a little easier for you.
-                    Lightweight and ready-to-use.
+                    We build small, focused applications that handle the tedious
+                    parts of your workflow — so you can focus on the work that
+                    actually matters.
                 </p>
                 <a href="#tools" class="btn-primary">Browse Tools</a>
             </div>
@@ -41,14 +53,13 @@
         <!-- Tools -->
         <section class="tools" id="tools">
             <div class="section-inner">
+                <p class="section-label">What we've shipped</p>
                 <h2 class="section-title">Our Tools</h2>
-                <p class="section-sub">
-                    Everything we've shipped, ready to use.
-                </p>
+                <p class="section-sub">Everything we've built, ready to use.</p>
 
                 <div class="tool-grid">
                     <!-- ScribeCut -->
-                    <div class="tool-card featured">
+                    <div class="tool-card featured reveal">
                         <div class="tool-header">
                             <div class="tool-icon cf">
                                 <img
@@ -108,7 +119,10 @@
                     </div>
 
                     <!-- More coming soon -->
-                    <div class="tool-card coming-soon">
+                    <div
+                        class="tool-card coming-soon reveal"
+                        style="animation-delay: 0.1s"
+                    >
                         <div class="tool-header">
                             <div class="tool-icon placeholder">
                                 <svg
@@ -125,10 +139,14 @@
                             </div>
                             <div class="tool-meta">
                                 <h3>More coming</h3>
-                                <span class="tool-tag">In the lab</span>
+                                <span class="tool-tag muted-tag"
+                                    >In the lab</span
+                                >
                             </div>
                         </div>
-                        <p class="tool-desc">More on the way!</p>
+                        <p class="tool-desc">
+                            More tools on the way. Eventually. Hopefully.
+                        </p>
                         <a
                             href="https://github.com/joshsantiago04"
                             target="_blank"
@@ -156,5 +174,19 @@
                 <p class="footer-copy">© 2026 HajoLabs. Built with care.</p>
             </div>
         </footer>
+
+        <script>
+            const observer = new IntersectionObserver(
+                (entries) =>
+                    entries.forEach((e) => {
+                        if (e.isIntersecting)
+                            e.target.classList.add("revealed");
+                    }),
+                { threshold: 0.12 },
+            );
+            document
+                .querySelectorAll(".reveal")
+                .forEach((el) => observer.observe(el));
+        </script>
     </body>
 </html>
